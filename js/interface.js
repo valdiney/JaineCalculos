@@ -1,0 +1,27 @@
+//////////////////////////////////////////////////////////////////////////////
+//
+// FUNÇÃO ABLITA E DESABILITA O BOTÃO COMEÇAR DE ACORDO COM O VALOR PASSADO COMO ARGUMENTO.
+//
+//////////////////////////////////////////////////////////////////////////////
+
+function botaoComecar(parametro) {
+var comecar = document.getElementById('comecar');
+ return comecar.style.display = parametro;
+}
+////////////////////////////////////////////////
+function botaoConfirmar(parametro) {
+var confirmar = document.getElementById('confirmar');
+ return confirmar.style.display = parametro;
+}
+//////////////////////////////////////////////
+
+
+
+	
+
+
+
+
+
+ 
+ 

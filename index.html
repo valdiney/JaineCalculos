@@ -1,0 +1,161 @@
+<!Doctype html>
+<html>
+<head>
+<script src="js/jquery-1.5.2.min.js"></script>
+<script src="js/core.js"></script>
+<script src="js/interface.js"></script>
+<link rel="stylesheet" href="css/style.css"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<link rel="stylesheet" type="text/css" href="css/tablet.css" media="all and (min-width:321px) and (max-width:1075px)">
+ <title>Novo Game</title>
+
+
+<script>
+/////////////////////////////
+// Oculta a barra de ferramentas
+$(document).ready(function(){
+ 
+$(document).keyup(function(e){
+ if(e.keyCode == 27){
+  $("#ferramentas").toggle('slow'); 
+ }
+});
+ 	
+});
+</script>
+
+
+</head>
+
+<body>
+<div id="modoPause">
+  <div id="closePause"
+   <span>Sair do Modo Pause!</span>
+  </div><!--end close pause-->
+</div><!--end modo pause-->
+<div id="ferramentas">
+
+
+<label for="select_tempo">Duração da prova</label>
+<select id="select_tempo">
+<option value="10">10 segundos</option>
+<option value="30">30 segundos</option>
+<option value="60">60 = 1 minuto</option>
+<option value="120">120 = 2 minutos</option>
+<option value="240">240 = 3 minutos</option>
+</select> 
+
+
+<!-------------------------------->
+
+
+<label for="select_operacao">Tipo de operação</label>
+<select id="select_operacao">
+<option value="adicao">+ Adição</option>
+<option value="subtração">- Subtração</option>
+<option value="multiplicacao">x Multiplicação</option>
+
+</select> 
+
+
+<!-------------------------------->
+
+
+
+<label for="select_operando1">Primeiro Operando</label>
+<select id="select_operando1">
+<option value="10">Gerar de 0 até 10</option>
+<option value="20">Gerar de 0 até 20</option>
+<option value="30">Gerar de 0 até 30</option>
+<option value="40">Gerar de 0 até 40</option>
+<option value="50">Gerar de 0 até 50</option>
+<option value="80">Gerar de 0 até 80</option>
+</select> 
+
+
+<!-------------------------------->
+
+
+<label for="select_operando2">Segundo Operando</label>
+<select id="select_operando2">
+<option value="10">Gerar de 0 até 10</option>
+<option value="20">Gerar de 0 até 20</option>
+<option value="30">Gerar de 0 até 30</option>
+<option value="40">Gerar de 0 até 40</option>
+<option value="50">Gerar de 0 até 50</option>
+<option value="80">Gerar de 0 até 80</option>
+</select> 
+
+
+
+
+
+
+</div><!--end ferramentas-->
+
+<header id="banner">
+<img id="logo" src="img_fim/logo.png"></img>
+</header>
+<div id="whapper">
+
+<div id="divApresentaRespostas">
+<button type="button" id="close_divApresentaRespostas">X</button>
+<p id="osCorretos" class="respostas"></p>
+<p id="osErrados" class="respostas"></p>
+<img id="img_fim" src="img_fim/img_naoRespondeu.png"></img>
+</div><!--end div apresenta respostas-->
+
+<div id="barra_tempo">
+<div id="conometro">00</div><!--end conometro-->
+</div><!--end barra tempo-->
+
+<div id="apresentacao_intermediaria" class="Classapresentacao_intermediaria">
+
+<button type="button" id="comecar" class="buttons">Play game</button><!--end começar-->
+<button type="button" id="confirmar" class="buttons">Confirmar</button><!--end começar-->
+
+</div><!--end apresentação intermediaria-->
+
+<table id="table_campo" border="0">
+<tr>
+<td><label id="mostra_operandos"></label></td>
+<td><input type="text" id="campo"></input></td>
+</tr>
+
+</table><!--end table campo-->
+
+
+
+
+</div><!--end whapper-->
+
+<div id="creditos">
+  <table id="tableCreditos" border="0">
+   <tr>
+   	 <td>
+	  <b>Estudantes de Informática:</b>
+	  <br>
+	  <a href="#">Código fonte no Github</a>
+      <br>
+      <b>Documentação:</b>
+      <br>
+      <a href="#">Visualizar documentação</a>
+     </td>
+
+     <td>
+     <b>Dados do Autor:</b>
+	 <br>
+	 <b>Nome:</b> Valdiney França
+	 <br>
+	 <b>Email:</b> valdiney.2@hotmail.com
+	 <br>
+	 <a href="#"><b>FaceBook:</b> Me encontre no faceBook</a>
+   	</td>
+  </tr>
+   
+
+   </table><!--end table creditos-->
+</div><!--end creditos-->
+
+</body>
+</html>

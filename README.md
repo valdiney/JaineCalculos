@@ -8,13 +8,17 @@ Versão: 0.1 | Data: 04 / 06 / 2013
 Autor: Valdiney França  | Email: Valdiney.2@hotmail.com
 Csshark.wordpress.com: Grupo de estudos em Informática Salvador-BA
 
+
 Introdução:
 O game de matemática JaineCalculos trata-se de uma ferramenta que pode ajudar as pessoas a se familiarizarem com as operações matemáticas. Perfeito para estudantes que tem dificuldades com a tabuada! O game foi projetado pensando-se na forma em que os usuários possam ir memorizando as operações. 
+
 Testes foram feitos com dois estudantes de ambos os sexos durante uma semana em contato com o game durante (30) trinta minutos por dia. O resultado foi satisfatório! Foi possível notar uma memorização, adaptação em muitas operações. Tudo isso porque a repetição é a geradora da possível perfeição. 
+
 Os números que foram apresentados para os estudantes eram gerados randomicamente em uma escala entre (0) á (10) formando assim varias combinações. O melhor é que essas operações eram repetidas algumas vezes. Creio que essa tenha sido a chave para a memorização e sucesso dos testes.
 Para melhor estimular os estudantes simulamos uma pequena disputa entre os dois, pois a sensação de desafio costuma ajudar bastante os afazeres, deixando assim a sensação de recompensa ao terminar as jogadas. 
+
 O vencedor acaba aprendendo que é preciso persistir e está preparado para os desafios da vida.
-O estudante que acabou se saindo mal perante o desafio, também acaba aprendo que é necessário está preparado e que a vida tem altos e baixos e que é preciso aprender a lhe dar com ambas as situações.
+O estudante que acabou se saindo mal perante o desafio, também acaba aprendo que é necessário está preparado e que a vida tem altos e baixos e que é preciso aprender a lhe dar com ambas as situações
 
 Ambiente de funcionamento:
 O game foi projeta visando à web, sendo assim, é possível executa-lo diretamente no navegador, o programa que utilizamos para acessar a internet. É compatível com os principais navegadores do mercado, não apresentando todas as suas funcionalidades no navegador InternetExplore por este não seguir os padrões da  W3C o órgão que regulamenta os padrões web. 

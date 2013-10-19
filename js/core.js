@@ -1,11 +1,11 @@
 ////////////////////////////////////////////////////////////
 
-// CODIFICAÇÃO DO TIPO (CORE) DO GAME JAINECALCULOS!
-// AUTOR: VALDINEY FRANÇA 
-// VERSÃO: 1.0
+// CODIFICAï¿½ï¿½O DO TIPO (CORE) DO GAME JAINECALCULOS!
+// AUTOR: VALDINEY FRANï¿½A 
+// VERSï¿½O: 1.0
 // DATA: 04/06/2013
 // EMAIL: valdiney.2@hotmail.com
-// GRUPO DE ESTUDOS EM INFORMÁTICA: cssshark.wordpress.com
+// GRUPO DE ESTUDOS EM INFORMï¿½TICA: cssshark.wordpress.com
 
 ////////////////////////////////////////////////////////////
 
@@ -16,27 +16,13 @@ window.onload = function(){
 var vetor_acertos = [0];
 var vetor_erros = [0];
 ////////////////////////////////////
-// Botão confirmar inicia desabilitado
+// Botï¿½o confirmar inicia desabilitado
 botaoConfirmar("none");
 //////////////////////////////////
 
-//////////////////////////////////////////////
-// Mantem sempre o foco no campo
-//var voltaOfoco = window.setInterval(foco,0000);
-//unction foco() {
-//document.getElementById('campo').focus(); 
- //}
-
-
- 
-
-
-
-
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //
-// FUNÇÃO DEFININDO O TEMPO PARA O DESAFIO
+// FUNï¿½ï¿½O DEFININDO O TEMPO PARA O DESAFIO
 // 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 function tempoParaDesafio(){
@@ -45,36 +31,9 @@ var intervalo_tempoDesafio = window.setInterval(function_intervalo,1000);
  function function_intervalo() {
   vetor_guardaOtempo[0]+=1;
 
-////////////////////////////////////////////////////////
-  function modoPause(parametro){
-  return document.getElementById('modoPause').style.display = parametro;
- } // end modo pause
-var pause = document.getElementById('conometro').onclick = function() {
-    clearInterval(intervalo_tempoDesafio); // Para o conometro
-    modoPause("block");
-    document.getElementById('campo').disabled = true;
-  } // end pause
-
-  var closePause = document.getElementById('closePause').onclick = function() {
-    modoPause("none");
-   
-
-    
-    var intervalo_tempoDesafio = window.setInterval(function_intervalo,1000);
-     function function_intervalo() {
-     vetor_guardaOtempo[0]+=1;
-    document.getElementById('conometro').innerHTML = vetor_guardaOtempo[0];
-    }
-
-
-
-  }// end close pause
-  /////////////////////////////////////////////////////////////
-
-
 
 document.getElementById('conometro').innerHTML = vetor_guardaOtempo[0];
-var limite_deTempo = document.getElementById('select_tempo').value; // Determina a duração da prova
+var limite_deTempo = document.getElementById('select_tempo').value; // Determina a duraï¿½ï¿½o da prova
  if( vetor_guardaOtempo[0] == limite_deTempo ) {
   clearInterval(intervalo_tempoDesafio); // Para o conometro
 var divApresentaRespostas = document.getElementById('divApresentaRespostas').style.display = "block";
@@ -88,7 +47,7 @@ var divApresentaRespostas = document.getElementById('divApresentaRespostas').sty
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // 
-// FUNÇÃO GERA OS NÚMEROS RAMDÔMICOS E CALCULA O PRODUTO DOS OPERANDOS
+// FUNï¿½ï¿½O GERA OS Nï¿½MEROS RAMDï¿½MICOS E CALCULA O PRODUTO DOS OPERANDOS
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 function numerosRandomicos() {
@@ -99,7 +58,7 @@ var comometroParaGerarOsNumeros = window.setTimeout(gerandoOsNumeros,0000);
  gerandoOprimeiroNumero = Math.floor( Math.random() * primeiroNumeroInteiro + 0);
  gerandoOsegundoNumero = Math.floor( Math.random() * segundoNumeroInteiro + 0);
 
- // Incrementando a opção de escolher a operação matemática...
+ // Incrementando a opï¿½ï¿½o de escolher a operaï¿½ï¿½o matemï¿½tica...
 
 var operacao = document.getElementById('select_operacao').value;
 
@@ -108,7 +67,7 @@ if (operacao == "adicao") {
  var visordosOperandos = document.getElementById('mostra_operandos');
  visordosOperandos.innerHTML = gerandoOprimeiroNumero+" + "+gerandoOsegundoNumero+" = ";
  
-} else if(operacao == "subtração"){
+} else if(operacao == "subtraï¿½ï¿½o"){
 	
 	gerandoOprimeiroNumero = Math.floor( Math.random() * 80 + 0);
   gerandoOsegundoNumero = Math.floor( Math.random() * 30 + 0);
@@ -125,28 +84,28 @@ if (operacao == "adicao") {
 }
 
 
- } // números Randômicos
-} // end gerando os números Randômicos
+ } // nï¿½meros Randï¿½micos
+} // end gerando os nï¿½meros Randï¿½micos
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // 
-// FUNÇÃO COMEÇAR: CHAMA AS DEMAIS FUNÇÕES
+// FUNï¿½ï¿½O COMEï¿½AR: CHAMA AS DEMAIS FUNï¿½ï¿½ES
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 var comecar = document.getElementById('comecar');
 comecar.onclick = function(){
- tempoParaDesafio(); // Chama a função que gera o tempo para o desafio
- numerosRandomicos(); // Chamando a função geradora de randômicos
- botaoComecar("none"); // Chamando e passando valor para função.
- botaoConfirmar("block"); // Chamando e passando valor para função
+ tempoParaDesafio(); // Chama a funï¿½ï¿½o que gera o tempo para o desafio
+ numerosRandomicos(); // Chamando a funï¿½ï¿½o geradora de randï¿½micos
+ botaoComecar("none"); // Chamando e passando valor para funï¿½ï¿½o.
+ botaoConfirmar("block"); // Chamando e passando valor para funï¿½ï¿½o
  document.getElementById('campo').focus();
  
-} // end começar e confirmar
+} // end comeï¿½ar e confirmar
  
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // 
-// FUNÇÃO CONFIRMA A RESPOSTA DAS PERGUNTAS
+// FUNï¿½ï¿½O CONFIRMA A RESPOSTA DAS PERGUNTAS
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 var confirmarResposta = document.getElementById('confirmar').onclick = function(){
@@ -193,19 +152,19 @@ if(vetor_erros[0] < vetor_acertos[0]) {
 } //end confirmar resposta
  
 
-// SE DESEJAR COLOCAR INTERAÇÃO COM O TECLADO FAÇA-O NESTE ESPAÇO...
+// SE DESEJAR COLOCAR INTERAï¿½ï¿½O COM O TECLADO FAï¿½A-O NESTE ESPAï¿½O...
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // 
-// FUNÇÃO DESABILITA A TELA QUE APRESENTA OS RESULTADOS 
+// FUNï¿½ï¿½O DESABILITA A TELA QUE APRESENTA OS RESULTADOS 
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 var desabilitadivApresentaRespostas = document.getElementById('close_divApresentaRespostas');
 desabilitadivApresentaRespostas.onclick = function() {
  document.getElementById('divApresentaRespostas').style.display = 'none';
  
-botaoConfirmar("none"); //Chamando e passando valor para função
-botaoComecar('block'); //Chamando e passando valor para função
+botaoConfirmar("none"); //Chamando e passando valor para funï¿½ï¿½o
+botaoComecar('block'); //Chamando e passando valor para funï¿½ï¿½o
 document.getElementById('campo').value = ''; //Limpa o campo de resposta
 document.getElementById('mostra_operandos').innerHTML = ''; //Limpa o o visor dos operandos
 ////////////////////////////////////////////
@@ -218,8 +177,8 @@ reoveClasseTrocaFundo();
 
 /////////////////////////////////////////////////////////////////////////////
 /*
-Estas duas funções dão uma pista de acerto e erro no momento que é respondido a pergunta
-Trocando as imagens de fundo da área intermédiaria.
+Estas duas funï¿½ï¿½es dï¿½o uma pista de acerto e erro no momento que ï¿½ respondido a pergunta
+Trocando as imagens de fundo da ï¿½rea intermï¿½diaria.
 */
 var animationRespostaCoporretas = function(){
   $(".Classapresentacao_intermediaria").addClass('AnimacaoSeCorretos');

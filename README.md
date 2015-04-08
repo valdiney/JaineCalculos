@@ -10,6 +10,10 @@ Csshark.wordpress.com: Grupo de estudos em Informática Salvador-BA
 
 <h3>Atenção:<i>O código fonte do game JaineCalculos foi reescrito em uma dessas noites de domingo: <a href="https://gist.github.com/valdiney/0fce5db023e75d6a2f6d" target="_blank">Visite aqui.</a></i></h3>
 
+<p>
+<a href="http://valdiney.net23.net/jaine/" target="_blank">Vidualizar o Game</a>
+</p>
+
 <h1>Introdução:</h1>
 O game de matemática JaineCalculos trata-se de uma ferramenta que pode ajudar as pessoas a se familiarizarem com as operações matemáticas. Perfeito para estudantes que tem dificuldades com a tabuada! O game foi projetado pensando-se na forma em que os usuários possam ir memorizando as operações. 
 
